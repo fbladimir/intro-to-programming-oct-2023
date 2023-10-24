@@ -1,7 +1,5 @@
 namespace LinkedOut.Tests;
 
-
-
 public class UnitTest1
 {
     [Fact]
@@ -12,21 +10,13 @@ public class UnitTest1
         int b = 20;
         int total;
 
-
-
         // When - "Act" - Poke at it and see what happens.
         total = a + b; // "System Under Test" ("SUT")
-
-
 
         // Then - "Assert" - Find out.
         Assert.Equal(30, total);
 
-
-
     }
-
-
 
     [Theory]
     [InlineData(10, 20, 30)]
@@ -36,28 +26,29 @@ public class UnitTest1
     {
         int total = a + b;
 
-
-
         Assert.Equal(expected, total);
     }
 
-
-
-    [Fact]
-    public void CanFormatNames()
+    [Theory]
+    [InlineData("Han", "Solo", "Solo, Han")]
+    [InlineData("Luke", "Skywalker", "Skywalker, Luke")]
+    [InlineData("Anakin", "Skywalker", "Skywalker, Anakin")]
+    public void CanFormatNames(string firstName, string lastName, string result)
     {
-        // NameFormatter formatter = new NameFormatter();
+        // Given
+        NameFormatter formatter = new NameFormatter();
 
+        // When 
+        string fullName = formatter.FormatName(firstName, lastName);
 
-
-        // string fullName = formatter.FormatName("Han", "Solo");
-
-
-
-        //  Assert.Equal("Solo, Han", fullName);
+        Assert.Equal(result, fullName);
     }
+}
 
-
-
-
+public class NameFormatter
+{
+    public string FormatName(string firstName, string lastName)
+    {
+        return lastName + ", " + firstName;
+    }
 }
