@@ -9,7 +9,7 @@ public class Account
 
     public decimal GetBalance()
     {
-        return 5000M;
+        return _balance;
     }
 
     public void Withdraw(decimal amountToWithdraw)
@@ -18,7 +18,7 @@ public class Account
         {
             return;
         }
-        _balance += amountToWithdraw;
+        _balance -= amountToWithdraw;
     }
 
 }
