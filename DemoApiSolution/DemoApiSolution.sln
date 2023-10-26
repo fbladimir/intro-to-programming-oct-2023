@@ -3,11 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.7.34202.233
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DemoApi", "DemoApi\DemoApi.csproj", "{B8FBEEB6-D7BA-42C2-83CA-4B6B2EE731DC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DemoApi", "DemoApi\DemoApi.csproj", "{B8FBEEB6-D7BA-42C2-83CA-4B6B2EE731DC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DemoApi.UnitTests", "DemoApi.UnitTests\DemoApi.UnitTests.csproj", "{EFF4E64F-F545-4277-889F-CCE8CBCFA7B0}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DemoApi.UnitTests", "DemoApi.UnitTests\DemoApi.UnitTests.csproj", "{EFF4E64F-F545-4277-889F-CCE8CBCFA7B0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DemoApi.ContractTests", "DemoApi.ContractTests\DemoApi.ContractTests.csproj", "{D1D87741-2333-4ACD-BF11-9ABD0F32547D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DemoApi.ContractTests", "DemoApi.ContractTests\DemoApi.ContractTests.csproj", "{D1D87741-2333-4ACD-BF11-9ABD0F32547D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
